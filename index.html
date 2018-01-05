@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>111js</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDO AL MUNDO DE JAVASCRIPT</h1>        
+    </header>
+    <form name = "frmCuadrado">
+        <fieldset>
+            <legend>El cuadrado de un número</legend>
+            <table>
+                <tr>
+                    <td>Numero: </td>
+                    <td><input type="text" name="numero" size="5"></td>
+                    <td><input type="button" value="Calcular" onclick="cuadrado(numero.value)"></td>
+                    <td>El cuadrado es: </td>
+                    <td><input type="text" name="resultado"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <br>
+    <form name = "frmFibo">
+        <fieldset>
+            <legend>Numeros fibo</legend>
+            <table>
+                <tr>
+                    <td>Longitud: </td>
+                    <td><input type="text" name="longitud" size="5"></td>
+                    <td><input type="button" value="calcular" onclick="fibo(longitud.value)"></td>
+                    <td>Fibos generados: </td>
+                    <td><input type="text" name="resultado"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <br>
+    <form name="frmPrimo">
+        <fieldset>
+            <legend>Primo</legend>
+            <table>
+                <tr>
+                    <td>Numero: </td>
+                    <td><input type="text" size="5" name="numero"></td>
+                    <td><input type="button" value="Es primo?" onclick="esPrimo(numero.value)"></td>
+                    <td>Resultado: </td>
+                    <td><input type="text" name="resultado"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <br>
+    <form name="frmGenPrimos">
+        <fieldset>
+            <legend>Generacion de Primos</legend>
+            <label>Limite: </label><input type="text" name="limite" size = "5">
+            <input type="button" onclick="genPrimos(limite.value)" value="Generar">
+            <label>Resultado: </label>
+            <input type="text" name="resultado">
+        </fieldset>
+    </form>
+    <br>
+    <form name="frmOrdena">
+        <fieldset>
+            <legend>Ordena Descendentemente</legend>
+            <label>Numero Grande: </label>
+            <input type="text" name="numero">
+            <input type="button" onclick="ordenaNumero(numero.value)" value="Ordenar">
+            <label>Resultado: </label>
+            <input type="text" name="resultado">
+        </fieldset>
+    </form>
+    <br>
+    <form name="frmOrdenaArray">
+        <fieldset>
+            <legend>Ordenando Arrays</legend>
+            <label>Longitud del Array: </label>
+            <input type="text" name="longitud" size="5">
+            <input type="button" value = "Ingresar elementos" onclick="leerArray(longitud.value)">
+            <label>Resultado: </label>
+            <input type="text" name="resultado">
+        </fieldset>
+    </form>
+</body>
+</html>
